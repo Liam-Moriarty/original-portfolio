@@ -1,4 +1,3 @@
-import React from "react";
 import footerGrid from "/footer-grid.svg";
 import { AiOutlineCopyright } from "react-icons/ai";
 import { FaInstagramSquare, FaTiktok, FaFacebookSquare } from "react-icons/fa";
@@ -14,14 +13,14 @@ const Footer = () => {
           <br /> <span>presence to the next Level?</span>
         </h2>
         <p className="text-text-light-gray text-base tracking-tight text-center">
-          Reach out to me today and let's discuss how can I help you achieve
-          your goals.
+          Reach out to me today and lets discuss how can I help you achieve your
+          goals.
         </p>
       </div>
 
       <div className="absolute bottom-0 w-full flex justify-between p-5 gap-4 max-md:flex-col">
         <p className="w-full flex md:gap-2 justify-start items-center gap-1 md:text-base text-xs whitespace-pre">
-          Copyright <AiOutlineCopyright /> 2024 Fernando Ordiales
+          Copyright <AiOutlineCopyright /> 2025 Fernando Ordiales
         </p>
         <div className="flex items-center w-full justify-end max-md:justify-start ">
           <div className="flex justify-center items-center md:gap-3 gap-1 text-purple-bg ">

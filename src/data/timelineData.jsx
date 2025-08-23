@@ -1,6 +1,6 @@
 export const data = [
   {
-    title: "2021 - Current",
+    title: "2021 - 2025",
     content: (
       <div>
         <p className="text-text-white text-xs md:text-xl font-medium mb-5 font-Inter">
