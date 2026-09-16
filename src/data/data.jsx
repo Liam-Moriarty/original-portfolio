@@ -29,7 +29,7 @@ export const gridItems = [
   {
     title: "About Me",
     description:
-      "Passionate aspiring frontend developer specializing in creating intuitive and visually stunning user interfaces using modern technologies and design principles.",
+      "Junior AI Software Engineer building AI-powered products on Google Cloud, with a frontend background in React, Next.js and Vue and an eye for interfaces that feel considered.",
     header: <Skeleton img={antiSocial} />,
     className: "md:col-span-2",
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
@@ -37,7 +37,7 @@ export const gridItems = [
   {
     title: "My Tech Stack",
     description:
-      "Building dynamic web applications with full-stack MERN Application: MongoDB, Express, React, and Node.js and handle state management using redux.",
+      "Full-stack across Next.js, React and Vue on the frontend, Node, Fastify and Spring Boot on the backend, shipped on Google Cloud with Docker and Kubernetes.",
     header: <Skeleton component={<CardDemo />} />,
     className: "md:col-span-1",
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,

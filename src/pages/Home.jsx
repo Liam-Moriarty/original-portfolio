@@ -1,7 +1,9 @@
 import Hero from "../components/Hero";
 import Grid from "../components/Grid";
 import RecentProjects from "../components/RecentProjects";
-import TimelineSection from "../components/TimelineSection";
+import ExperienceTable from "../components/ExperienceTable";
+import StackPreview from "../components/StackPreview";
+import WorkProjects from "../components/WorkProjects";
 
 const Home = () => {
   return (
@@ -9,7 +11,9 @@ const Home = () => {
       <Hero />
       <Grid />
       <RecentProjects />
-      <TimelineSection />
+      <ExperienceTable />
+      <StackPreview />
+      <WorkProjects />
     </>
   );
 };

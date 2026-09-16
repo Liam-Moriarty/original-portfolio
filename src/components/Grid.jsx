@@ -1,10 +1,12 @@
 import { gridItems } from "../data/data";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
+import SectionLabel from "./ui/SectionLabel";
 
 const Grid = () => {
   return (
-    <section>
-      <BentoGrid className="max-w-8xl mx-auto md:auto-rows-[30rem] ">
+    <section id="about" className="scroll-mt-20 py-14">
+      <SectionLabel index="01" title="about" rule={false} />
+      <BentoGrid className="mx-auto md:auto-rows-[22rem]">
         {gridItems.map((item, i) => (
           <BentoGridItem
             key={i}

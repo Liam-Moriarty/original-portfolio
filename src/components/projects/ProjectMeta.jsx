@@ -2,9 +2,9 @@ import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { cn } from "../../lib/utils";
 
 const Row = ({ label, children, className }) => (
-  <div className={cn("border-t border-white/[0.07] py-4", className)}>
-    <dt className="mb-1.5 text-xs text-text-light-gray/60">{label}</dt>
-    <dd className="text-sm text-text-white">{children}</dd>
+  <div className={cn("border-t border-white/[0.07] py-3.5", className)}>
+    <dt className="mb-1 font-mono text-[11px] text-text-light-gray/60">{label}</dt>
+    <dd className="text-xs text-text-white">{children}</dd>
   </div>
 );
 
@@ -26,7 +26,7 @@ const Placeholder = ({ children }) => (
 
 const ProjectMeta = ({ project }) => {
   return (
-    <dl className="mt-10 border-b border-white/[0.07] md:grid md:grid-cols-2 md:gap-x-10 lg:block">
+    <dl className="mt-8 border-b border-white/[0.07] md:grid md:grid-cols-2 md:gap-x-10 lg:block">
       <Row label="Live URL">
         {project.liveUrl ? (
           <ExternalValue href={project.liveUrl}>
@@ -56,7 +56,7 @@ const ProjectMeta = ({ project }) => {
           {project.stack.map((tech) => (
             <span
               key={tech}
-              className="rounded-md border border-white/[0.08] bg-white/[0.04] px-2 py-1 text-xs text-text-light-gray"
+              className="rounded-md border border-white/[0.08] bg-white/[0.04] px-2 py-0.5 font-mono text-[11px] text-text-light-gray"
             >
               {tech}
             </span>

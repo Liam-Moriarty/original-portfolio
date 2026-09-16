@@ -26,10 +26,10 @@ const ProjectCard = ({ project, variant = "gallery" }) => {
           </div>
         </BrowserFrame>
 
-        <h3 className="mt-3 text-base font-medium leading-snug text-text-white transition-colors group-hover:text-text-purple">
+        <h3 className="mt-2.5 text-sm font-medium leading-snug text-text-white transition-colors group-hover:text-text-purple">
           {project.title}
         </h3>
-        <StatusBadge status={project.status} className="mt-1.5 text-xs" />
+        <StatusBadge status={project.status} className="mt-1 text-[11px]" />
       </Link>
     );
   }
@@ -61,7 +61,7 @@ const ProjectCard = ({ project, variant = "gallery" }) => {
         <h3 className="text-lg font-semibold leading-snug tracking-tight text-text-white">
           {project.title}
         </h3>
-        <StatusBadge status={project.status} className="mt-1.5 text-xs" />
+        <StatusBadge status={project.status} className="mt-1 text-[11px]" />
       </div>
     </Link>
   );

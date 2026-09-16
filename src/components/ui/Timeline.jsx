@@ -1,7 +1,7 @@
 import { useScroll, useTransform, motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 
-export const Timeline = ({ data }) => {
+export const Timeline = ({ data, intro }) => {
   const ref = useRef(null);
   const containerRef = useRef(null);
   const [height, setHeight] = useState(0);
@@ -22,19 +22,15 @@ export const Timeline = ({ data }) => {
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
   return (
-    <div className="w-full bg-purple-bg font-sans md:px-10" ref={containerRef}>
-      <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-10">
-        <h2 className="text-lg md:text-4xl mb-4 text-text-purple max-w-4xl font-medium uppercase">
-          Educational Background
-        </h2>
-        <p className="text-text-light-gray text-sm md:text-base max-w-sm">
-          From early childhood curiosity in technology to advanced studies in
-          web development with MERN (MongoDB, Express, React, Node Js) my
-          educational journey has been marked by a deep passion for innovation
-          and continuous learning.
+    <div className="w-full bg-purple-bg font-sans" ref={containerRef}>
+      {/* The heading used to be hardcoded here, which duplicated the section
+          label wherever this got reused. It's a prop now. */}
+      {intro && (
+        <p className="max-w-2xl text-base leading-relaxed text-text-light-gray">
+          {intro}
         </p>
-      </div>
-      <div ref={ref} className="relative max-w-7xl mx-auto">
+      )}
+      <div ref={ref} className="relative">
         {data.map((item, index) => (
           <div
             key={index}

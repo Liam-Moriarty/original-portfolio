@@ -5,7 +5,7 @@ import MagicButton from "./ui/MagicButton";
 
 const Hero = () => {
   return (
-    <div className="md:h-[80vh] w-full md:pb-20 md:pt-36">
+    <div className="md:h-[70vh] w-full md:pb-16 md:pt-32">
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
@@ -24,18 +24,18 @@ const Hero = () => {
 
       <div className="flex justify-center relative my-40 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Dynamic Web Magic with React.Js
+          <h2 className="font-mono uppercase tracking-widest text-[11px] text-center text-blue-100 max-w-80">
+            AI-Powered Products with React & Google Cloud
           </h2>
 
           <TextGenerateEffect
-            className="text-center text-[2.5rem] md:text-5xl lg:text-6xl"
+            className="text-center text-[2rem] md:text-[2.5rem]"
             words="Transforming Concepts into Interactive Digital Solutions"
           />
 
-          <p className="text-center text-text-white md:tracking-wider mb-4 text-sm md:text-sm lg:text-base">
-            Hi, I&apos;m Fernando Ordiales, aspiring Frontend React JS
-            Developer.
+          <p className="text-center text-text-white md:tracking-wider mb-4 text-sm">
+            Hi, I&apos;m Fernando Ordiales, Junior AI Software Engineer at
+            Hytel.
           </p>
 
           <a href="#recentProjects">

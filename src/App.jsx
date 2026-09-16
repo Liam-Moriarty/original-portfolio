@@ -3,6 +3,8 @@ import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import ProjectDetail from "./pages/ProjectDetail";
+import AllProjects from "./pages/AllProjects";
+import ExperiencePage from "./pages/ExperiencePage";
 import NotFound from "./pages/NotFound";
 
 const App = () => {
@@ -10,11 +12,13 @@ const App = () => {
     // overflow-x-clip rather than overflow-hidden: `hidden` would turn this into a
     // scroll container and silently break the sticky rail on a project page.
     <main className="relative mx-auto flex flex-col items-center justify-center overflow-x-clip bg-purple-bg px-5 text-text-white sm:px-10">
-      <div className="w-full max-w-7xl">
+      <div className="w-full max-w-5xl">
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<AllProjects />} />
           <Route path="/projects/:slug" element={<ProjectDetail />} />
+          <Route path="/experience" element={<ExperiencePage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />

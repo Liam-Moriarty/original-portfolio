@@ -12,7 +12,7 @@ import { getOtherProjects, getProject } from "../data/projects";
 const BackLink = () => (
   <Link
     to="/#recentProjects"
-    className="group inline-flex items-center gap-2 text-sm text-text-light-gray transition-colors hover:text-text-purple"
+    className="group inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-widest text-text-light-gray transition-colors hover:text-text-purple"
   >
     <FaArrowLeft className="h-3 w-3 transition-transform duration-200 group-hover:-translate-x-1" />
     All projects
@@ -28,14 +28,14 @@ const ProjectDetail = () => {
   const hasActions = project.liveUrl || project.repoUrl;
 
   return (
-    <article className="relative pb-20 pt-28 md:pt-32">
+    <article className="relative pb-20 pt-24 md:pt-28">
       <Spotlight className="-top-60 left-[45%] h-[70vh] w-[60vw]" fill="purple" />
       <div className="pointer-events-none absolute inset-x-0 top-0 h-[40rem] bg-grid-white/[0.03] [mask-image:radial-gradient(ellipse_at_top,black,transparent_70%)]" />
 
       <div className="relative z-10">
         <BackLink />
 
-        <div className="mt-8 flex flex-col gap-12 lg:mt-12 lg:grid lg:grid-cols-[minmax(0,26rem)_minmax(0,1fr)] lg:gap-16">
+        <div className="mt-8 flex flex-col gap-12 lg:mt-12 lg:grid lg:grid-cols-[minmax(0,20rem)_minmax(0,1fr)] lg:gap-10">
           {/* Preview leads on small screens, then moves to the right column at lg.
               It is the shorter column, so it is the one that sticks while the
               longer metadata rail scrolls past it. */}
@@ -44,17 +44,17 @@ const ProjectDetail = () => {
           </div>
 
           <div className="order-2 lg:order-1">
-            <p className="text-xs uppercase tracking-widest text-text-light-gray/70">
+            <p className="font-mono text-[11px] uppercase tracking-widest text-text-light-gray/70">
               {project.year} &middot; {project.role}
             </p>
 
-            <h1 className="mt-4 text-[2rem] font-semibold leading-[1.1] tracking-tight text-text-white sm:text-4xl lg:text-[2.75rem]">
+            <h1 className="mt-3 text-[1.625rem] font-semibold leading-[1.15] tracking-tight text-text-white sm:text-[2rem] lg:text-[2.25rem]">
               {project.title}
             </h1>
 
             <StatusBadge status={project.status} className="mt-4 text-sm" />
 
-            <p className="mt-6 text-base leading-relaxed text-text-light-gray">
+            <p className="mt-5 text-sm leading-relaxed text-text-light-gray">
               {project.summary}
             </p>
 
@@ -75,7 +75,7 @@ const ProjectDetail = () => {
                     href={project.repoUrl}
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-lg border border-white/10 bg-white/[0.02] px-7 text-sm font-medium text-text-white transition-colors hover:border-text-purple/40 hover:bg-white/[0.04] md:w-60"
+                    className="inline-flex h-11 w-full items-center justify-center gap-2 rounded-lg border border-white/10 bg-white/[0.02] px-6 text-xs font-medium uppercase tracking-widest text-text-white transition-colors hover:border-text-purple/40 hover:bg-white/[0.04] md:w-52"
                   >
                     <FaGithub />
                     Source code

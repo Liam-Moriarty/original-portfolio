@@ -5,14 +5,14 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className="w-full md:h-[30rem] h-[40rem] relative">
+    <div className="w-full md:h-[24rem] h-[32rem] relative">
       <img src={footerGrid} alt="footer" className="w-full h-full" />
       <div className="absolute inset-0 flex items-center justify-center w-full h-full flex-col">
-        <h2 className="text-text-white font-bold text-4xl tracking-tight text-center">
+        <h2 className="text-text-white font-bold text-[1.75rem] sm:text-[2rem] leading-tight tracking-tight text-center">
           Ready to take <span className="text-text-purple">your</span> digital{" "}
           <br /> <span>presence to the next Level?</span>
         </h2>
-        <p className="text-text-light-gray text-base tracking-tight text-center">
+        <p className="text-text-light-gray text-sm tracking-tight text-center mt-3">
           Reach out to me today and lets discuss how can I help you achieve your
           goals.
         </p>
