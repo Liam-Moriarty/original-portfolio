@@ -1,28 +1,28 @@
 import PageHeader from "../components/ui/PageHeader";
 import SectionLabel from "../components/ui/SectionLabel";
-import ProjectListCard from "../components/projects/ProjectListCard";
+import ProjectGridCard from "../components/projects/ProjectGridCard";
 import Chip from "../components/ui/Chip";
 import { projects } from "../data/projects";
 import { workProjects } from "../data/workProjects";
 
 const AllProjects = () => (
   <article className="pb-20">
-    <PageHeader title="projects">
-      Everything I&apos;ve built — personal projects I designed and shipped
-      end to end, and the products I worked on with a team.
+    <PageHeader title="Projects">
+      Everything I&apos;ve built: personal projects I designed and shipped
+      end to end, plus the products I worked on with a team.
     </PageHeader>
 
     <section className="pt-14">
-      <SectionLabel index="01" title="personal" rule={false} />
-      <div className="space-y-5">
+      <SectionLabel index="01" title="Personal" rule={false} />
+      <div className="grid gap-5 sm:grid-cols-2">
         {projects.map((project) => (
-          <ProjectListCard key={project.slug} project={project} />
+          <ProjectGridCard key={project.slug} project={project} />
         ))}
       </div>
     </section>
 
     <section className="pt-14">
-      <SectionLabel index="02" title="work" rule={false} />
+      <SectionLabel index="02" title="Work" rule={false} />
       <div className="grid gap-4 sm:grid-cols-2">
         {workProjects.map((project, i) => (
           <div

@@ -5,7 +5,7 @@ const ExperienceTable = () => (
   <section id="experience" className="scroll-mt-20 py-14">
     <SectionLabel
       index="03"
-      title="experience"
+      title="Experience"
       action={{ label: "Full history", to: "/experience" }}
     />
 

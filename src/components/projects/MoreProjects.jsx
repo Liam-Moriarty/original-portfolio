@@ -7,7 +7,7 @@ const MoreProjects = ({ projects }) => {
   return (
     <section className="mt-16 border-t border-white/[0.07] pt-10 md:mt-20 md:pt-12">
       <SectionLabel
-        title="more projects"
+        title="More projects"
         action={{ label: "All projects", to: "/projects" }}
         rule={false}
       />

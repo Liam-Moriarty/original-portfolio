@@ -5,7 +5,7 @@ import SectionLabel from "./ui/SectionLabel";
 const Grid = () => {
   return (
     <section id="about" className="scroll-mt-20 py-14">
-      <SectionLabel index="01" title="about" rule={false} />
+      <SectionLabel index="01" title="About" rule={false} />
       <BentoGrid className="mx-auto md:auto-rows-[22rem]">
         {gridItems.map((item, i) => (
           <BentoGridItem

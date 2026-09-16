@@ -1,5 +1,6 @@
 import { cn } from "../../lib/utils";
 
+// Icons sit in full brand colour at rest and drain to grey on hover.
 // "Element Plus" -> EP, "Pinia" -> PI. Used when simple-icons has no brand mark.
 const monogram = (name) => {
   const words = name.split(/[\s./]+/).filter(Boolean);
@@ -25,8 +26,8 @@ const TechChip = ({ name, Icon, color, size = "default", plain = false }) => {
             style={{ color }}
             aria-hidden="true"
             className={cn(
-              "shrink-0 opacity-60 grayscale transition duration-200",
-              "group-hover:opacity-100 group-hover:grayscale-0",
+              "shrink-0 transition duration-200",
+              "group-hover:opacity-50 group-hover:grayscale",
               small ? "h-2.5 w-2.5" : "h-3.5 w-3.5"
             )}
           />
@@ -35,8 +36,8 @@ const TechChip = ({ name, Icon, color, size = "default", plain = false }) => {
             style={{ color }}
             aria-hidden="true"
             className={cn(
-              "flex shrink-0 items-center justify-center rounded bg-white/[0.06] font-semibold leading-none opacity-60 grayscale transition duration-200",
-              "group-hover:opacity-100 group-hover:grayscale-0",
+              "flex shrink-0 items-center justify-center rounded bg-white/[0.06] font-semibold leading-none transition duration-200",
+              "group-hover:opacity-50 group-hover:grayscale",
               small ? "h-2.5 w-2.5 text-[6px]" : "h-3.5 w-3.5 text-[8px]"
             )}
           >

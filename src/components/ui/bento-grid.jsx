@@ -13,6 +13,9 @@ export const BentoGrid = ({ className, children }) => {
   );
 };
 
+// The site is dark-only, so these carry no `dark:` prefixes. They used to, which
+// meant a visitor whose OS was set to light mode got neutral-600 text and
+// transparent borders on the dark background.
 export const BentoGridItem = ({
   className,
   title,
@@ -23,17 +26,17 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "row-span-1 relative rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] bg-white border border-transparent justify-between flex flex-col space-y-4 bg-gradient-to-r from-gradient-50 to-gradient-400",
+        "group/bento relative row-span-1 flex flex-col justify-between space-y-4 rounded-3xl",
+        "border border-white/[0.10] bg-gradient-to-b from-gradient-50 to-gradient-400 p-4",
+        "transition duration-200 hover:border-text-purple/25",
         className
       )}
     >
       {header}
-      <div className="group-hover/bento:translate-x-2 transition duration-200">
+      <div className="transition duration-200 group-hover/bento:translate-x-2">
         {icon}
-        <div className="font-sans font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2">
-          {title}
-        </div>
-        <div className="font-sans font-normal text-neutral-600 text-base dark:text-neutral-300">
+        <div className="mb-2 mt-2 font-semibold text-text-white">{title}</div>
+        <div className="text-sm font-normal leading-relaxed text-text-light-gray">
           {description}
         </div>
       </div>

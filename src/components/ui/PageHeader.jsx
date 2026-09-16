@@ -11,7 +11,7 @@ const PageHeader = ({ title, children }) => (
       Home
     </Link>
 
-    <h1 className="mt-8 font-mono text-[1.75rem] lowercase leading-none text-text-white sm:text-[2.25rem]">
+    <h1 className="mt-8 font-mono text-[1.75rem] leading-none text-text-white sm:text-[2.25rem]">
       {title}
     </h1>
 

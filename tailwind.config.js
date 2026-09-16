@@ -21,7 +21,10 @@ export default {
     },
     extend: {
       fontFamily: {
-        Inter: ["Inter", "sans-serif"],
+        // One typeface for the whole site. Both `sans` and `mono` point at it so
+        // existing font-mono / font-sans classes resolve to the same face.
+        sans: ["JetBrains Mono", "ui-monospace", "SFMono-Regular", "Menlo", "monospace"],
+        mono: ["JetBrains Mono", "ui-monospace", "SFMono-Regular", "Menlo", "monospace"],
       },
       colors: {
         "purple-bg": "#000319",

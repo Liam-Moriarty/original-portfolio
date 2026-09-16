@@ -4,7 +4,7 @@ import { workProjects } from "../data/workProjects";
 
 const WorkProjects = () => (
   <section id="workProjects" className="scroll-mt-20 py-14">
-    <SectionLabel index="05" title="work" rule={false} />
+    <SectionLabel index="05" title="Work" rule={false} />
 
     <div className="grid gap-4 sm:grid-cols-2">
       {workProjects.map((project, i) => (

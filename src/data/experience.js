@@ -39,7 +39,7 @@ export const experience = [
     roles: [
       {
         title: "Web Developer",
-        // Resume reads "09/2026 – 01/2026", which runs backwards. Read as 2025,
+        // Resume reads "09/2026 - 01/2026", which runs backwards. Read as 2025,
         // since the degree ended 07/2025 and Hytel started 02/2026.
         start: "2025-09",
         end: "2026-01",
@@ -109,13 +109,13 @@ export const formatDuration = (start, end) => {
 
 export const formatPeriod = (start, end) => {
   if (!start) return null;
-  return `${formatMonth(start)} — ${end ? formatMonth(end) : "Present"}`;
+  return `${formatMonth(start)} - ${end ? formatMonth(end) : "Present"}`;
 };
 
 // Flattened newest-first rows for the compact homepage table.
 export const roleRows = experience.flatMap((company) =>
   company.roles.map((role) => ({
-    year: role.start ? role.start.slice(0, 4) : "—",
+    year: role.start ? role.start.slice(0, 4) : "",
     title: role.title,
     company: company.company,
     location: company.location,

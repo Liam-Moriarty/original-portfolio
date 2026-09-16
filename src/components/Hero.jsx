@@ -18,13 +18,13 @@ const Hero = () => {
         <Spotlight className="top-28 left-80 h-[80vh] w-[50vw] " fill="blue" />
       </div>
 
-      <div className="h-screen w-full bg-purple-bg dark:bg-grid-white/[0.03] bg-grid-black/[0.2] absolute top-0 left-0 flex items-center justify-center">
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-purple-bg [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+      <div className="h-screen w-full bg-purple-bg bg-grid-white/[0.03] absolute top-0 left-0 flex items-center justify-center">
+        <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-purple-bg [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       </div>
 
       <div className="flex justify-center relative my-40 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <h2 className="font-mono uppercase tracking-widest text-[11px] text-center text-blue-100 max-w-80">
+          <h2 className="font-mono uppercase tracking-widest text-[11px] text-center text-blue-100 max-w-lg">
             AI-Powered Products with React & Google Cloud
           </h2>
 
@@ -34,8 +34,7 @@ const Hero = () => {
           />
 
           <p className="text-center text-text-white md:tracking-wider mb-4 text-sm">
-            Hi, I&apos;m Fernando Ordiales, Junior AI Software Engineer at
-            Hytel.
+            Hi, I&apos;m Fernando Ordiales, AI Software Engineer
           </p>
 
           <a href="#recentProjects">

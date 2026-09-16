@@ -29,7 +29,7 @@ export const STATUS = {
 // TODO(fernando): the three MERN projects still need `liveUrl` / `repoUrl`. Until
 // a URL is set, the detail page renders a muted placeholder row instead of a dead
 // link, and the action buttons are skipped entirely.
-// Double-check `stack`, `role` and `year` too — they were inferred from the
+// Double-check `stack`, `role` and `year` too; they were inferred from the
 // project descriptions, not from the repos themselves.
 export const projects = [
   {

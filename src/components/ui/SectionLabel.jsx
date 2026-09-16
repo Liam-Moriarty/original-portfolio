@@ -9,7 +9,7 @@ const SectionLabel = ({ index, title, action, rule = true, className }) => (
       <p className="font-mono text-xs text-text-light-gray/60">
         {index && (
           <>
-            <span className="text-text-purple">{index}</span> —{" "}
+            <span className="text-text-purple">{index}</span> /{" "}
           </>
         )}
         {title}

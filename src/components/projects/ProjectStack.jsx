@@ -36,7 +36,7 @@ const ProjectStack = () => {
       return { x: 0, rotate: 0, scale: 0.85, opacity: 0, zIndex: 0 };
     }
     return {
-      x: offset * 250,
+      x: offset * 205,
       rotate: offset * 8,
       scale: offset === 0 ? 1 : 0.92,
       opacity: offset === 0 ? 1 : 0.35,
@@ -66,7 +66,7 @@ const ProjectStack = () => {
             <motion.div
               key={project.slug}
               className={cn(
-                "w-full max-w-[480px] [grid-area:1/1]",
+                "w-full max-w-[380px] [grid-area:1/1]",
                 isActive ? "cursor-default" : "cursor-pointer",
                 (hidden || (compact && !isActive)) && "pointer-events-none"
               )}

@@ -29,7 +29,7 @@ export const gridItems = [
   {
     title: "About Me",
     description:
-      "Junior AI Software Engineer building AI-powered products on Google Cloud, with a frontend background in React, Next.js and Vue and an eye for interfaces that feel considered.",
+      "AI Software Engineer. I build AI-powered products on Google Cloud.",
     header: <Skeleton img={antiSocial} />,
     className: "md:col-span-2",
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
@@ -37,7 +37,7 @@ export const gridItems = [
   {
     title: "My Tech Stack",
     description:
-      "Full-stack across Next.js, React and Vue on the frontend, Node, Fastify and Spring Boot on the backend, shipped on Google Cloud with Docker and Kubernetes.",
+      "Next.js, React and Vue up front. Node, Fastify and Spring Boot behind. Shipped with Docker on GCP.",
     header: <Skeleton component={<CardDemo />} />,
     className: "md:col-span-1",
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
@@ -58,8 +58,8 @@ export const gridItems = [
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Data Alchemy: Converting Numbers into Meaningful Strategies.",
-    description: "Knowledge on basic fundamentals of data analytics",
+    title: "Data Analytics",
+    description: "Turning raw numbers into strategies a team can act on.",
     header: <Skeleton img={dataAnalysis1} />,
     icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
   },
