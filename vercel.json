@@ -1,3 +1,10 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }],
+  "redirects": [
+    {
+      "source": "/:path*",
+      "destination": "https://ordiales.vercel.app/",
+      "permanent": true
+    }
+  ]
 }
